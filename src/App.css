@@ -1,38 +1,170 @@
-.App {
+body {
+  background-image: url(/src/images/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Hanalei Fill', cursive;
+}
+
+.alert-warning {
+  visibility: visible;
+}
+
+#info-div {
+  height: 30px;
+}
+
+.click-btn {
+  border: 2px solid rgb(110, 110, 1);
+  border-radius: 150px;
+  height: 300px;
+  width: 300px;
+  font-size: 70px;
+}
+
+.click-btn:hover {
+  border: .5px solid rgb(104, 104, 89);
+}
+
+.timer-div {
+  position: absolute;
+  top: 15px;
+  right: 250px;
+  width: 150px;
+  height: 75px;
+  background-color: white;
+  opacity: .9;
+  border-radius: 10px;
+}
+
+.reset-btn {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  opacity: 0.5;
+}
+
+.information-btn {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  opacity: 0.5;
+}
+
+.information-data {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 80px;
+  left: 25px;
+  opacity: 0.7;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.information-btn:hover {
+  opacity: 1;
+}
+
+.reset-btn:hover {
+  opacity: 1;
+}
+
+.clicks-counter {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.clicks-span {
+  color: rgb(185, 161, 20);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.click-div {
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.upgrades-div {
+  margin-top: 10%;
+  padding: 10px;
+}
+
+.upgrade-btn {
+  width: 200px;
+  opacity: 0.5;
+  border-radius: 20px;
+  margin-top: -2px;
+}
+
+.upgrade-btn:hover {
+  opacity: 1;
+}
+
+.btn-div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-level {
+  width: 60px;
+  height: 50px;
+  border-radius: 15px;
+  opacity: .8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.power-counter {
+  margin-top: 20%;
+}
+
+.endgame-div {
+  background-color: rgb(115, 179, 115);
+  height: 800px;
+  width: 600px;
+  position: absolute;
+  top: 8%;
+  left: 34%;
+  border-radius: 20px;
+}
+
+.endgame-reset-btn {
+  position: inherit;
+  bottom: 10px;
+  left: 44%;
+}
+
+.achievements-icon {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  opacity: .7;
+}
+
+.achievements-icon:hover {
+  opacity: 1;
+}
+
+.achievements-div {
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  bottom: 75px;
+  right: 25px;
+  opacity: 0.7;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.single-achievement {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 110px;
+  width: 150px;
+  padding:10px;
+  background-color: white;
+  opacity: 1;
+}
+
+.single-achievement-title {
+  font-weight: bold;
+}
+
+.single-achievement-description {
+  font-size: 15px;
 }
